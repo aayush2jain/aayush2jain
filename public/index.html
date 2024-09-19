@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+         body{
+  background-color:black;
+}
+#name{
+    text-shadow: 4px 4px 4px rgba(0,0,0); 
+}
+#n{
+    text-shadow: 4px 4px 2px rgba(0,0,0); 
+}
+#e{
+    text-shadow: -6px -6px 4px rgba(0,0,0); 
+}
+.hi{
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.aj{
+   text-shadow: 4px 4px 4px rgba(0,0,0); 
+}
+#a{
+   text-shadow: 2px 2px 2px rgba(0,0,0,1); 
+}
+#head1{
+   text-shadow: 3px 3px 4px rgba(0,50,150,0.9); 
+}
+#head2{
+   text-shadow: 3px 3px 4px rgba(200,200,150,0.9); 
+}
+#try{
+   text-shadow: 1px 1px 2px rgba(200,200,150,0.9); 
+}
+#home{
+ background: rgb(51,156,207);
+background: linear-gradient(180deg, rgba(51,56,207,0.8) 0%, rgba(24,72,172,1) 50%, rgba(2,5,37,1) 100%);
+}
+#about{
+background: rgb(111,193,232);
+background: linear-gradient(0deg, rgba(111,193,232,1) 0%, rgba(6,68,198,1) 50%, rgba(3,23,45,1) 100%);
+}
+#skill{
+background: rgb(2,0,14);
+background: linear-gradient(180deg, rgba(2,0,14,1) 0%, rgba(2,37,121,1) 50%);
+}
+#project{
+animation-timeline:view();
+background: rgb(2,0,14);
+background: linear-gradient(180deg, rgba(2,0,14,1) 0%, rgba(2,37,121,1) 50%);
+}
+#contact{
+background: rgb(10,3,150);
+background: linear-gradient(0deg, rgba(10,3,150,0.9641981792717087) 50%, rgba(7,1,69,0.9754026610644257) 100%);
+}
+
+@keyframes move{
+  0%{
+    left:8vw;
+  }
+  25%{
+    left:6vw;
+  }
+  50%{
+    left:4vw;
+  }
+  75%{
+    left:2vw;
+  }
+  100%{
+    left:0vw;
+  }
+}
+@keyframes pin{
+  0%{
+    right:37.5vw;
+  }
+  50%{
+    right:38vw;
+  }
+  100%{
+    right:38.5vw;
+  }
+}
+@keyframes hello{
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:0.5;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:0.25;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes left{
+  0%{
+    opacity:0;
+    margin-left:0vw;
+  }
+  50%{
+    opacity:0.5;
+    margin-left:7vw
+  }
+  100%{
+    opacity:1;
+    margin-left:14vw;
+  }
+}
+@keyframes lt{
+  0%{
+    opacity:0;
+    margin-left:-20vw;
+  }
+  50%{
+    opacity:0.5;
+    margin-left:-10vw
+  }
+  100%{
+    opacity:1;
+    margin-left:0vw;
+  }
+}
+@keyframes right{
+  0%{
+    opacity:0;
+    margin-left:30vw;
+  }
+  50%{
+    opacity:0.5;
+    margin-left:20vw
+  }
+  100%{
+    opacity:1;
+    margin-left:10vw;
+  }
+}
+@keyframes rt{
+  0%{
+    opacity:0;
+    gap:60vw
+  }
+  50%{
+    opacity:0.5;
+    gap:35vw
+  }
+  100%{
+    opacity:1;
+    gap:10vw;
+  }
+}
+
+@keyframes up{
+  0%{
+    margin-top:12vh;
+  }
+  50%{
+ 
+    margin-top:8vh;
+  }
+  100%{
+    margin-top:4vh;
+  }
+}
+@keyframes move{
+  0%{
+    margin-top:9vh;
+  }
+  50%{
+ 
+    margin-top:10vh;
+  }
+  100%{
+    margin-top:11vh;
+  }
+}
+@keyframes html{
+  0%{
+    margin-right:40vw;
+  }
+  50%{
+    margin-right:24vw;
+  }
+  100%{
+    margin-right:8vw;
+  }
+}
+@keyframes css{
+  0%{
+    margin-right:40vw;
+  }
+  50%{
+    margin-right:26vw;
+  }
+  100%{
+    margin-right:12vw;
+  }
+}
+@keyframes t-css{
+  0%{
+    margin-right:40vw;
+  }
+  50%{
+    margin-right:22vw;
+  }
+  100%{
+    margin-right:4vw;
+  }
+}
+@keyframes js{
+  0%{
+    margin-right:40vw;
+  }
+  50%{
+    margin-right:28vw;
+  }
+  100%{
+    margin-right:16vw;
+  }
+}
+@keyframes njs{
+  0%{
+    margin-left:40vw;
+  }
+  50%{
+    margin-left:28vw;
+  }
+  100%{
+    margin-left:16vw;
+  }
+}
+@keyframes ejs{
+  0%{
+    margin-left:40vw;
+  }
+  50%{
+    margin-left:32vw;
+  }
+  100%{
+    margin-left:24vw;
+  }
+}
+@keyframes mdb{
+  0%{
+    margin-left:40vw;
+  }
+  50%{
+    margin-left:30vw;
+  }
+  100%{
+    margin-left:20vw;
+  }
+}
+@keyframes card1{
+  0%{
+    top:30vh;
+    right:43vw;
+    transform:rotate(0deg);
+    opacity:100%
+  }
+  50%{
+    top:14vh;
+    right:21vw;
+    transform:rotate(180deg);
+    opacity:100%
+  }
+  100%{
+    top:5vh;
+    right:10vw;
+    transform:rotate(360deg);
+    opacity:100%
+  }
+}
+@keyframes card2{
+  0%{
+    top:30vh;
+    right:43vw;
+    transform:rotate(0deg);
+    opacity:100%
+  }
+  50%{
+    top:33vh;
+    right:21vw;
+    transform:rotate(180deg);
+    opacity:100%
+  }
+  100%{
+    top:55vh;
+    right:10vw;
+    transform:rotate(360deg);
+    opacity:100%
+  }
+}
+@keyframes card3{
+  0%{
+    top:30vh;
+    right:43vw;
+    transform:rotate(0deg);
+    opacity:100%
+  }
+  50%{
+    top:33vh;
+    right:61vw;
+    transform:rotate(180deg);
+    opacity:100%
+  }
+  100%{
+    top:55vh;
+    right:80vw;
+    transform:rotate(360deg);
+    opacity:100%
+  }
+}
+@keyframes card4{
+  0%{
+    top:30vh;
+    right:43vw;
+    transform:rotate(0deg);
+    opacity:100%
+  }
+  50%{
+    top:18vh;
+    right:61vw;
+    transform:rotate(180deg);
+    opacity:100%
+  }
+  100%{
+    top:5vh;
+    right:80vw;
+    transform:rotate(360deg);
+    opacity:100%
+  }
+}
+@keyframes rotate{
+  0%{
+    transform:rotate(0deg);
+  }
+  50%{
+    transform:rotate(180deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+@keyframes s{
+  0%{
+    margin-top:1vh;
+  }
+    50%{
+    margin-top:0vh;
+  }
+    100%{
+    margin-top:-1vh;
+  }
+}
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="main ove">
+            <div id="nav"
+                class="text-white gap-[30vw] flex flex-row fixed w-[100vw] top-0 z-50 bg-opacity-80 bg-black py-2">
+                <div class="pl-[14vw] font-bold text-lg hover:cursor-default"><a>PORTFOLIO.</a></div>
+                <div class="nav gap-[6vw] hidden lg:flex flex-row font-medium">
+                    <h2 class=" hover:text-blue-500 cursor-pointer hover:overline decoration-blue-700 "><a href="#home"
+                            onclick='  homec.style.display="inline"'>Home</a></h2>
+                    <h2 class=" hover:text-blue-500 cursor-pointer hover:overline"><a href="#about"
+                            onclick=' aboutc.style.display="inline";'>About</a></h2>
+                    <h2 class=" hover:text-blue-500 cursor-pointer hover:overline"><a href="#project"
+                            onclick='projectc.style.display="inline";'>Projects</a></h2>
+                    <h2 class=" hover:text-blue-500 cursor-pointer hover:overline"><a href="#skill"
+                            onclick='skillc.style.display="inline";'>Skills</a></h2>
+                    <h2 class=" hover:text-blue-500 cursor-pointer hover:overline"><a href="#contact">Contact</a></h2>
+                </div>
+
+            </div>
+            <div id="home" class="flex sm:w-[100vw] sm:h-[90vh] lg:mt-[2vh] bg-cyan-900 lg:flex-row relative w-[100vw] h-[120vh]">
+                <div id="homec">
+                <div  class=" lg:flex-row relative flex flex-col ">
+                <div id="homechild"
+                    class="flex flex-col text-zinc-100 font-medium text-xl content-center justify-center ml-[2vw] lg:ml-28 pt-20 lg:pr-24 lg:w-[50vw] hover:cursor-default">
+                    <h1 id="name" class="hi ml-[12vw] text-2xl  animate-[right_2s_linear]">
+                        Namaste!,</h1>
+                    <h1 id="homeo" class="hi ml-[14vw] italic animate-[left_2s_linear]">It's me</h1>
+                    <h1 id="name" class="me text-3xl py-1 z-10 ml-[10vw] animate-[right_2s_linear]
+                 decoration-blue-800 hover:cursor-default hover:text-sky-200 ">
+                        Aayush_Jain,</h1>
+                    <h1 id="homeo" class="hi ml-[14vw] italic animate-[left_2s_linear]">I am </h1>
+                    <div id="homeo" class="flex flex-row gap-4 ml-16">
+                        <h1 class="aj pb-2 text-center text-3xl animate-[hello_3s_linear] text-cyan-300">a</h1>
+                        <h1 id="typing-text"
+                            class="aj pb-2 text-center text-3xl animate-[hello_3s_linear] text-cyan-300 ">.
+                        </h1>
+                    </div>
+                    <p id="homegrandchild" class="hi text-base text-center animate-[hello_4s_linear] hover:scale-110">With a passion for
+                        transforming ideas into
+                        visually stunning
+                        and user-friendly digital experiences, my expertise lies in crafting seamless interfaces using
+                        the
+                        technologies such as HTML, CSS, JavaScript, Node.js,Express.js and MongoDB . . .</p>
+                    <div id="homeo" class="flex flex-row mt-[4vh] justify-evenly animate-[up_2s_linear]">
+                        <div id="homeo"
+                            class="rounded-full bg-white h-[7vh] w-[7vh] overflow-hidden shadow-[4px_4px_4px_1px_rgba(0,0,0,0.8)]
+                animate-[hello_2s_linear] z-10 hover:animate-bounce">
+                            <a href="https://www.linkedin.com/in/aayush-jain-8a4982279/" target="_blank"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"></a>
+                        </div>
+                        <div id="homeo"
+                            class="rounded-full bg-white h-[7vh] w-[7vh] overflow-hidden shadow-[4px_4px_4px_1px_rgba(0,0,0,0.7)]
+                z-10 animate-[hello_2s_linear] hover:animate-bounce">
+                            <a href="https://github.com/aayush2jain" target="_blank"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png"></a>
+                        </div>
+                        <div id="homeo"
+                            class="rounded-full bg-white h-[7vh] w-[7vh] overflow-hidden shadow-[4px_4px_4px_1px_rgba(0,0,0,0.6)] z-10 animate-[hello_2s_linear] hover:animate-bounce ">
+                            <a href="https://www.instagram.com/aayushjain8551/" target="_blank"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="pic" class="flex flex-col animate-[hello_2s_linear]">
+                    <div id="pic0"
+                        class="rounded-full w-[50vmin] h-[50vmin] overflow-hidden object-cover mt-[9vh] lg:ml-40 ml-[15vmin]
+             shadow-[1px_1px_10px_14px_rgba(0,0,90,0.7)] animate-[move_2s_linear_infinite_alternate]
+             hover:shadow-[1px_1px_8px_14px_rgba(250,250,250,0.7)] ">
+                        <img src="me2.png" class="w-[50vmin] h-[70vmin]">
+                    </div>
+                    <div id="homeo" class="flex flex-row">
+                        <div id="hoeo"
+                            class="j text-center rounded-full sm:ml-44 mt-12 ml-[15vmin]  bg-transparent text-zinc-100 border-blue-600">
+                            <a id="e" class="text-3xl font-bold animate-none hover:cursor-progress">More About Me...</a>
+                        </div>
+                        <div class="w-[30px] h-[1px] animate-spin rounded-full mt-16 bg-slate-100">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div id="about" class="w-[100vw] h-[90vh] relative">
+                <div id="aboutc" class="">
+             <div id="me" class="pic absolute top-36 left-[0vw] h-[60vh] bg-[url('me4.png')] lg:w-[20vw] w-[50vw] bg-center bg-cover bg-blend-color animate-[hello_2s_linear]"></div>
+             <div
+                 class="absolute p-4 top-40 left-44 h-[10vh] rounded-full bg-slate-100 animate-[hello_6s_linear] hover:bg-teal-400
+                 shadow-[1px_1px_8px_10px_rgba(250,250,250,0.7)]">
+                <h1 id="comment" class="font-semibold hover:cursor-default">Click to Continue</h1>
+             </div>
+             <div
+                 class="absolute top-56 left-40 h-[3vh] w-[3vh] rounded-full animate-[hello_5s_linear] bg-slate-100
+                hover:bg-teal-400
+                 shadow-[1px_1px_4px_5px_rgba(250,250,250,0.7)]">
+             </div>
+             <div
+                 class="absolute top-60 left-36 h-[2vh] w-[2vh] rounded-full animate-[hello_4s_linear] bg-slate-100
+              hover:bg-teal-400
+                 shadow-[1px_1px_2px_2px_rgba(250,250,250,0.7)]">
+             </div>
+             <!-- <div class="">
+             <div
+                 class="ml-6 h-[4vh] w-[4vh] rounded-full bg-cyan-300 absolute top-1 shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)]  ">
+             </div>
+             <div
+                 class="ml-6 h-[3vh] w-[3vh] rounded-full bg-cyan-300 absolute top-4 shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)] ">
+             </div>
+             <div
+                 class="ml-6 h-[2vh] w-[2vh] rounded-full bg-cyan-300 absolute top-7 shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)]">
+             </div>
+             <div
+                 class="ml-6 h-[1vh] w-[1vh] rounded-full bg-cyan-300 absolute top-11 shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)] ">
+             </div>
+              <div
+                  class="ml-6 h-[0.5vh] w-[0.5vh] rounded-full bg-cyan-300 absolute top-12 shadow-[1px_1px_4px_4px_rgba(0,250,200,0.8)] ">
+              </div>
+             </div> -->
+             <div id="n" class="absolute h-[90vh] w-[60vw] top-0 right-4 bg-transparent  hover:cursor-default">
+                <div id="heading" class="flex flex-row pt-[5vh] pl-[20vmin] text-center gap-2">
+                    <h1 id="head2" class="text-white font-bold text-3xl">About
+                    </h1>
+                    <h1 id="head1" class="text-cyan-400 font-bold text-3xl">Me</h1>
+                </div>
+                <div id="a" class=" text-white mr-0  hidden animate-[hello_4s_linear]">
+                    <ul class="list-disc">
+                        <li>
+                            <p class="hover:text-xl">Hey there! I'm Aayush Jain, a 17-year-old college student currently
+                                pursuing my B.Tech in
+                                Information
+                                Technology from Delhi Technological University (DTU). Web development isn't just a hobby
+                                for me;
+                                it's my passion.
+                            </p>
+                        </li>
+                        <li>
+                        <p class="hover:text-xl">
+                            My skills are knowing HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB. Whether it's
+                            designing stunning front-end interfaces or architecting robust back-end systems, I'm always
+                            up
+                            for
+                            the challenge. From personal projects to collaborative endeavors, I've dabbled in it all,
+                            honing
+                            my
+                            skills and refining my craft along the way.
+                        </p>
+                        </li>
+                        <li><p class="hover:text-xl"> But I'm not content with just where I am. I'm constantly seeking out
+                            new
+                            opportunities to grow,
+                            innovate, and make a mark in the world of web development. Whether it's through coding
+                            competitions,
+                            open-source contributions, or freelance gigs, I'm always eager to push myself further and
+                            learn
+                            something new.
+                        </p>
+                        </li>
+                        <li><p class="hover:text-xl"> Beyond my technical expertise, I've also cultivated strong
+                            professional
+                            skills that complement
+                            my
+                            abilities in the field. I excel at team building, fostering a positive and productive team
+                            environment where collaboration and synergy thrive. Additionally, my communication skills
+                            are
+                            top-notch, enabling me to convey complex technical concepts with clarity and to actively
+                            engage
+                            with
+                            teammates, clients, and stakeholders.</p>
+                            </li>
+                    </ul>
+                </div>
+             </div>
+            </div>
+            </div>
+            <div id="project" class="h-[100vh] w-[100vw] relative animate-[imp_2s_linear]">
+                       <div id="heading"
+                           class="flex flex-row lg:pt-[10vmin] pt-[3vmin]  pl-[40vw] text-center gap-2 hover:cursor-default">
+                           <h1 id="head2" class="text-white font-bold text-4xl text-center">My
+                           </h1>
+                           <h1 id="head1" class="text-cyan-400 font-bold text-4xl">Projects</h1>
+                       </div>
+                       <div id="projectc" class="">
+                       <div class="animate-[hello_3s_linear]">
+                           <div id="" class="bg-black h-[30vmin] w-[25vmax] font-semibold absolute top-[35vh] lg:right-[38vw]  rounded-[20px]
+                        shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)] animate-[pin_2s_linear_infinite_alternate] ">
+                               <div id="pin"
+                                   class="absolute text-white bottom-1 bg-zinc-800 w-[25vmax] rounded-xl opacity-50 hover:opacity:80">
+                                   <h1 id="a" class=" px-[2vw] py-[2vh] font-semibold hover:cursor-default"><a
+                                           href="https://github.com/aayush2jain/pinterest">Pinterest Clone</a></h1>
+                               </div>
+                               <a href="https://github.com/aayush2jain/pinterest"><img src="pinterest.png"
+                                       class="h-[27vmin] rounded-lg"></a>
+                           </div>
+                       </div>
+                       <div
+                           class="h-[30vh] w-[20vw] bg-black absolute top-[35vh] right-[43vw] opacity-0 animate-[card1_0.75s_linear] shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)]">
+                       </div>
+                       <div class="h-[30vh] w-[20vw] bg-black absolute top-[30vh] right-[43vw] opacity-0
+                        animate-[card2_0.75s_linear] shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)]">
+                       </div>
+                       <div class="h-[30vh] w-[20vw] bg-black absolute top-[30vh] right-[43vw] opacity-0
+                          animate-[card3_0.75s_linear] shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)]">
+                       </div>
+                       <div class="h-[30vh] w-[20vw] bg-black absolute top-[30vh] right-[43vw] opacity-0
+                            animate-[card4_0.75s_linear] shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)]">
+                       </div>
+                       <div class="animate-[hello_2s_linear]">
+                           <div id="card"
+                               class=" translate h-[30vmin] w-[25vmax] bg-black rounded-[20px] shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)] absolute top-[10vh] sm:right-[7vw] right-[2vw] animate-[s_1.5s_linear_0.75s_alternate_infinite]">
+                               <div
+                                   class="absolute text-white bottom-1 bg-zinc-800 w-[25vmax] rounded-xl opacity-0 hover:opacity-80">
+                                   <h1 id="a" class=" px-[2vw] py-[2vh] font-semibold hover:cursor-default">Netflix Ui</h1>
+                               </div>
+                               <a href="https://aayush2jain.github.io/netflix-clone/" target="_blank"><img
+                                       src="netflix.png"
+                                       class="rounded-lg"></a>
+                           </div>
+                       </div>
+                       <div class="animate-[hello_2s_linear]">
+                           <div class="h-[30vmin] w-[25vmax] bg-black rounded-[20px] shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)]
+                      absolute top-[60vh] sm:right-[7vw] right-[2vw] animate-[s_1.5s_linear_alternate_infinite]">
+                               <div
+                                   class="absolute text-white bottom-1 bg-zinc-800 w-[25vmax] rounded-xl opacity-0 hover:opacity-80">
+                                   <h1 id="a" class=" px-[2vw] py-[2vh] font-semibold hover:cursor-default">Iphone 15 clone
+                                </h1>
+                               </div>
+                               <a href="https://iphone-15clone.vercel.app/" target="_blank"><img src="apple.png "
+                                       class="h-[30vmin] w-[25vmax p-2"></a>
+                           </div>
+                       </div>
+                       <div class="animate-[hello_2s_linear]">
+                           <div class="h-[30vmin] w-[25vmax] bg-black rounded-[20px] shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)]
+                      absolute top-[60vh] sm:right-[70vw] right-[55vw] animate-[s_1.5s_linear_alternate_infinite]">
+                               <div
+                                   class="absolute text-white bottom-1 bg-zinc-800 w-[25vmax] rounded-xl opacity-0 hover:opacity-80">
+                                   <h1 id="a" class=" px-[2vw] py-[2vh] font-semibold hover:cursor-default">
+                                       Voguish-(Online Ecommerce)</h1>
+                               </div>
+                               <a href="https://voguish-zoi8-q5z1pa9pz-aayush2jains-projects.vercel.app/"
+                                   target="_blank"><img
+                                       src="Voguish.png"
+                                       class="h-[30vmin] w-[25vmax] p-1 rounded-[20px]"></a>
+                           </div>
+                       </div>
+                       <div class="animate-[show_2s_linear]">
+                           <div class="h-[30vmin] w-[25vmax] bg-black rounded-[20px] shadow-[1px_1px_8px_8px_rgba(0,250,200,0.8)]
+                      absolute top-[10vh] sm:right-[70vw] right-[55vw]
+                      animate-[s_1.5s_linear_0.75s_alternate_infinite]">
+                               <div
+                                   class="absolute text-white bottom-1 bg-zinc-800 w-[25vmax] rounded-xl opacity-0 hover:opacity-80">
+                                   <h1 id="a" class=" px-[2vw] py-[2vh] font-semibold hover:cursor-default">Gym-Website
+                                   </h1>
+                               </div>
+                               <a href="https://aayush2jain.github.io/gym-website/" target="_blank"><img src="gym.png"
+                                       class="rounded-lg"></a>
+                           </div>
+
+                       </div>
+                       <div id="heading" class="flex flex-row pt-[70vh]  pl-[40vw] text-center gap-2">
+                           <h1 id="head2" class="text-white font-bold text-4xl text-center"><a
+                                   href="https://github.com/aayush2jain?tab=repositories">View</a>
+                           </h1>
+                           <h1 id="head2" class="text-white font-bold text-4xl"><a
+                                   href="https://github.com/aayush2jain?tab=repositories">More...</a></h1>
+                       </div>
+                       </div>
+            </div>
+            <div id="skill" class="h-[125vh] lg:h-[90vh] w-[100vw] text-white font-semibold hover:cursor-default">
+                <div id="heading" class="flex flex-row pt-[5vh] lg:pl-[45vmax] pl-[16vmin] text-center gap-2">
+                    <h1 id="head2" class="text-white font-bold text-3xl">My
+                    </h1>
+                    <h1 id="head1" class="text-cyan-400 font-bold text-3xl">Skills</h1>
+                </div>
+                <div id="skillc" class="">
+                <div id="skills" class="lg:flex lg:flex-row flex flex-col animate-[rt_1s_linear] lg:gap-[10vw]">
+                <div id="front-end" class="animate-[lt_1s_linear]">
+               <div id="html" class=" flex flex-col pt-[10vh] pl-[5vw]">
+                  <div class="flex flex-row gap-[28vw]">
+                      <div id="a" class="">REACT</div>
+                      <div class="">
+                          <h1 id="no" class="pr-10 text-cyan-300 animate-[hello_2s_linear]">80%</h1>
+                      </div>
+                  </div>
+                <div class="bar my-1 h-[1vh] w-[40vw] bg-black rounded-full ">
+                    <div
+                        class="h-[1vh] mr-[8vw] bg-cyan-300 rounded-full shadow-[1px_1px_4px_4px_rgba(0,250,200,0.8)] animate-[html_2s_linear]">
+                    </div>
+                </div>
+               </div>
+               <div id="CSS" class=" flex flex-col pt-[10vh] pl-[5vw]">
+                     <div class="flex flex-row gap-[25vw]">
+                         <div id="a" class="">CSS</div>
+                         <div class="">
+                             <h1 id="no" class="pr-10 text-cyan-300 animate-[hello_2s_linear]">70%</h1>
+                         </div>
+                     </div>
+                   <div class="bar my-1 h-[1vh] w-[40vw] bg-black rounded-full ">
+                       <div
+                           class="h-[1vh] mr-[12vw] bg-cyan-300 rounded-full
+                           shadow-[1px_1px_4px_4px_rgba(0,250,200,0.8)] animate-[css_2s_linear]">
+                       </div>
+                   </div>
+               </div>
+                <div id="t-CSS" class=" flex flex-col pt-[10vh] pl-[5vw]">
+                      <div class="flex flex-row gap-[28vw]">
+                          <div id="a" class="">TailwindCss</div>
+                          <div class="">
+                              <h1 id="no" class="pr-10 text-cyan-300 animate-[hello_2s_linear]">90%</h1>
+                          </div>
+                      </div>
+                    <div class="bar my-1 h-[1vh] w-[40vw] bg-black rounded-full  ">
+                        <div
+                            class="h-[1vh] mr-[4vw] bg-cyan-300 rounded-full
+                            shadow-[1px_1px_4px_4px_rgba(0,250,200,0.8)] animate-[t-css_2s_linear]">
+                        </div>
+                    </div>
+                </div>
+               <div id="JavaScript" class=" flex flex-col pt-[10vh] pl-[5vw]">
+                    <div class="flex flex-row gap-[18vw]">
+                        <div id="a" class="">JavaScript</div>
+                        <div class="">
+                            <h1 id="no" class="pr-10 text-cyan-300 animate-[hello_2s_linear]">60%</h1>
+                        </div>
+                    </div>
+                   <div class="bar my-1 h-[1vh] w-[40vw] bg-black rounded-full ">
+                       <div
+                           class="h-[1vh] mr-[16vw] bg-cyan-300 rounded-full
+                           shadow-[1px_1px_4px_4px_rgba(0,250,200,0.8)] animate-[js_2s_linear]">
+                       </div>
+                   </div>
+               </div>
+               </div>
+               <div id="back-end " class="">
+                <div id="Nodejs" class=" flex flex-col pt-[15vh] lg:pr-[5vw] ">
+                    <div class="flex flex-row-reverse gap-[16vw]">
+                        <div id="a" class="m">NodeJs</div>
+                        <div class="">
+                            <h1 id="no" class="pr-10 text-cyan-300 animate-[hello_2s_linear]">60%</h1>
+                        </div>
+                    </div>
+                    <div class="bar ml-[58vw] lg:ml-2 lg:my-1 h-[1vh] w-[40vw] bg-black rounded-full ">
+                        <div
+                            class="h-[1vh] ml-[16vw] bg-cyan-300 rounded-full
+                            shadow-[1px_1px_4px_4px_rgba(0,250,200,0.8)] animate-[njs_2s_linear]">
+                        </div>
+                    </div>
+                </div>
+                 <div id="Expressjs" class=" flex flex-col pt-[10vh] lg:pr-[5vw]">
+                      <div class="flex flex-row-reverse gap-[6vw]">
+                          <div id="a" class="">ExpressJs</div>
+                          <div class="">
+                              <h1 id="no" class="pr-10 text-cyan-300 animate-[hello_2s_linear]">40%</h1>
+                          </div>
+                      </div>
+                     <div class="bar ml-[58vw] lg:ml-2 my-1 h-[1vh] w-[40vw] bg-black rounded-full ">
+                         <div
+                             class="h-[1vh] ml-[24vw] bg-cyan-300 rounded-full
+    shadow-[1px_1px_4px_4px_rgba(0,250,200,0.8)] animate-[ejs_2s_linear]">
+                         </div>
+                     </div>
+                 </div>
+                  <div id="MongoDb" class=" flex flex-col pt-[10vh] lg:pr-[5vw]">
+                   <div class="flex flex-row-reverse gap-[10vw]">
+                       <div id="a" class="">MongoDb</div>
+                       <div class="">
+                           <h1 id="no" class="pr-10 text-cyan-300 animate-[hello_2s_linear]">50%</h1>
+                       </div>
+                   </div>
+                      <div class="bar ml-[58vw] lg:ml-2 my-1 h-[1vh] w-[40vw] bg-black rounded-full ">
+                          <div
+                              class="h-[1vh] ml-[20vw] bg-cyan-300 rounded-full shadow-[1px_1px_4px_4px_rgba(0,250,200,0.8)] animate-[mdb_2s_linear]">
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div id="contact" class="sm:h-[70vh] h-[110vh] w-[100vw] text-white font-semibold sm:flex sm:flex-row flex flex-col sm:gap-64">
+                <div class="flex flex-col w-[30vw] hover:cursor-default">
+                     <div id="heading" class="flex flex-row pt-[10vh]  pl-[20vw] text-center gap-2">
+                         <h1 id="head1" class="text-cyan-400 font-bold text-3xl text-center">Contact
+                         </h1>
+                         <h1 id="head2" class="text-white font-bold text-3xl">Me</h1>
+                     </div>
+                     <div class=" p-6 pl-[5vw]">
+                        <h1 class="py-1 text-xl">let's work togeather</h1>
+                        <div class="flex flex-row gap-4">
+                            <img class="h-[5vh]" src="contact1.svg">
+                            <h1 class="py-1 text-base">8696213068</h1>
+                        </div>
+                        <div class="flex flex-row gap-4">
+                            <img class="h-[5vh]"src="email1.svg">
+                        <h1 class="py-1 text-base">aayushjain1290@gmail.com</h1>
+                        </div>
+                     </div>
+                </div>
+                 <div id="form" class="ml-[20vw] sm:ml-0">
+                   <form action="https://api.web3forms.com/submit" method="POST">
+                       <input type="hidden" name="access_key" value="fb087477-e0b5-492c-ab2f-2527df38056c">
+                       <input type="text"
+                           class="bg-black/50 text-white w-[50vw] sm:w-[30vw] h-[6vh] pl-4 rounded-full my-1 mt-[12vh]"
+                           name="name"
+                           placeholder="Enter Your Name" required><br>
+
+                       <input type="email" id="email" class="bg-black/50 text-white w-[50vw] sm:w-[30vw] h-[6vh] pl-4 rounded-full my-1"
+                           name="email"
+                           placeholder="Enter Your Email" required><br>
+
+                       <input type="text" id="subject"
+                           class="bg-black/50 text-white w-[50vw] sm:w-[30vw] h-[6vh] pl-4 rounded-full my-1"
+                           name="subject"
+                           placeholder="Enter your subject" required><br>
+
+                       <textarea name="message" rows="4"
+                           class="bg-black/50 text-white w-[50vw] sm:w-[30vw] h-[6vh] pl-4 pb-[15vh] pt-[2vh] rounded-lg
+                           my-1 overflow-y-hidden "
+                           placeholder="I would appreciate if you have any recommendation for my website" required></textarea><br>
+
+                       <input type="submit"
+                           class=" hover:cursor-pointer w-[30vw] h-[6vh] ml-[20] sm:ml-0 bg-cyan-300 rounded-full shadow-[1px_1px_4px_4px_rgba(0,250,200,0.8)] font-semibold mt-2 text-black "
+                           value="Submit">
+                   </form>
+                 </div>
+            </div>
+             
+        </div>
+        </div>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
