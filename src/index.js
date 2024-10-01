@@ -38,7 +38,7 @@ function deleteText(length, index) {
 // Start typing animation
 typeText(wordsToType, 0);
 let a;
-const words=["Hii,It's Me","Aayush_Jain","and You?",`hii`,"Nice to meet you","here you go!","Hope,you find me interesting","well feeling great to meet you"];
+const words=["Hii,It's Me","Aayush_Jain","and You?",`hii`,"Nice to meet you","Glad,you find me interesting","hope to meet again"];
 var button = document.getElementById("about");
 var index=0;
 const delay = 50; // Delay between each character in milliseconds
@@ -54,7 +54,7 @@ button.addEventListener("click", function() {
      var word=words[index];
     typingEffect.innerHTML="";
     
-    if(index==8){
+    if(index===6){
         index--
     }
     setTimeout(()=>{
@@ -67,7 +67,7 @@ button.addEventListener("click", function() {
      words[3]="hii "+a;
       }
     },1000);
-    if(index==8){
+    if(index==4){
     let hello=document.getElementById("a");
     hello.style.display="inline";
     }
